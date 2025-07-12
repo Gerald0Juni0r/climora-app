@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  /* Cor do texto restaurada */
 }
 
 .app-header p {
@@ -25,6 +26,7 @@
   margin-top: 0.25rem;
 }
 
+/* ÍCONE DE NUVEM RESTAURADO */
 .cloud-icon {
   display: inline-block;
   width: 40px;
@@ -131,7 +133,10 @@
   .climoraapp-container {
     padding: 1rem;
   }
-  .app-header h1 { font-size: 2rem; }
+  .app-header h1 { 
+    font-size: 2rem; 
+    gap: 0.5rem;
+  }
   .app-header p { font-size: 1rem; }
 
   .info-cards-grid {
