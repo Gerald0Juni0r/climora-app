@@ -1,0 +1,74 @@
+/* --- Estilo Padrão para DESKTOP --- */
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: var(--text-primary);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-icon {
+  font-size: 2.5rem;
+}
+
+.info-title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  order: 2; /* O título fica embaixo */
+}
+
+.info-value {
+  font-size: 1.75rem;
+  font-weight: 600;
+  order: 1; /* O valor fica em cima */
+}
+
+/* --- Media Query para sobrescrever o layout em TABLET/MOBILE --- */
+@media (max-width: 920px) {
+  .info-card {
+    justify-content: space-between;
+    padding: 1.25rem;
+  }
+  
+  .info-content {
+    display: contents; 
+  }
+
+  .info-icon {
+    font-size: 2.25rem;
+  }
+  
+  .info-title {
+    order: 0; /* Ordem reseta */
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+  
+  .info-value {
+    order: 0; /* Ordem reseta */
+    font-size: 2.5rem;
+  }
+
+  /* Agrupa o ícone e o título em um lado */
+  .info-card > .info-icon,
+  .info-card > .info-content > .info-title {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+    .info-card .info-value {
+        font-size: 2rem;
+    }
+    .info-card .info-icon {
+        font-size: 2rem;
+    }
+}
