@@ -58,7 +58,6 @@ export const getWeatherData = async (city) => {
 
     const createWeatherObject = (weatherCode) => mapWeatherCode(weatherCode);
 
-    // AGORA, O NOME NÃO É MAIS RETORNADO DAQUI. O App.js CUIDARÁ DISSO.
     return {
       current: {
         temp: current.temperature_2m,

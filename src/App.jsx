@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { getWeatherData } from './api/weatherService';
 import './App.css';
 
-
 import { FaMapMarkerAlt, FaSearch, FaWind } from 'react-icons/fa';
 import { WiHumidity, WiBarometer } from 'react-icons/wi';
 
@@ -17,7 +16,6 @@ const capitalizeCity = (str) => {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
 };
-
 
 function App() {
   const [city, setCity] = useState('');

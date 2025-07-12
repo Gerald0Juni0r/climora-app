@@ -17,8 +17,8 @@ const WeatherIcon = ({ iconCode, isDay, className }) => {
       iconJsx = isDay ? <div className="sun"></div> : <div className="moon"></div>;
       break;
 
-    case '02': // Quase Limpo
-    case '03': // Parcialmente Nublado
+    case '02': // Parcialmente Nublado
+    case '03': // Nublado
       iconJsx = (
         <>
           <div className="cloud"></div>
@@ -28,16 +28,16 @@ const WeatherIcon = ({ iconCode, isDay, className }) => {
       );
       break;
 
-    case '04': // Nublado
+    case '04': // Encoberto
       iconJsx = <div className="cloud"></div>;
       break;
 
-    case '50': // Nevoeiro
+    case '50': // Névoa/Nevoeiro
       iconJsx = <div className="mist"></div>;
       break;
     
-    case '09': // Chuva/Garoa
-    case '10':
+    case '09': // Pancadas de Chuva
+    case '10': // Chuva
       iconJsx = (
         <>
           <div className="cloud"></div>
