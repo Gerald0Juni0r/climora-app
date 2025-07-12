@@ -8,7 +8,8 @@ const WeatherDisplay = ({ current, city }) => {
   return (
     <div className="main-weather-card">
       <WeatherIcon
-        code={current.weather.code} // Passa o código numérico direto
+        iconCode={current.weather.icon}
+        isDay={current.isDay}
         className="weather-icon-large"
       />
       <p className="temperature">{Math.round(current.temp)}°C</p>

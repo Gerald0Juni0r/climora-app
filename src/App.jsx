@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { getWeatherData } from './api/weatherService';
 import './App.css';
 
+import logo from './logo.svg'; 
+
 import { FaMapMarkerAlt, FaSearch, FaWind } from 'react-icons/fa';
 import { WiHumidity, WiBarometer } from 'react-icons/wi';
 
@@ -9,6 +11,15 @@ import WeatherDisplay from './components/WeatherDisplay';
 import InfoCard from './components/InfoCard';
 import HourlyForecast from './components/HourlyForecast';
 import DailyForecast from './components/DailyForecast';
+
+// Função auxiliar para capitalizar o nome da cidade
+const capitalizeCity = (str) => {
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+};
+
 
 function App() {
   const [city, setCity] = useState('');
@@ -24,7 +35,9 @@ function App() {
     setWeather(null);
     try {
       const data = await getWeatherData(city);
-      setWeather(data);
+      // CORREÇÃO: ADICIONAMOS O NOME QUE O USUÁRIO DIGITOU (CAPITALIZADO)
+      // AOS DADOS DO CLIMA, EM VEZ DE USAR O NOME DA API.
+      setWeather({ ...data, name: capitalizeCity(city) });
     } catch (err) {
       setError(err.message || 'Ocorreu um erro ao buscar os dados.');
     } finally {
@@ -33,9 +46,12 @@ function App() {
   };
 
   return (
-    <div className="climoraapp-container">
+    <div className="climapp-container">
       <header className="app-header">
-        <h1><i className="cloud-icon"></i>Climora App</h1>
+        <h1>
+          <img src={logo} alt="Logo do Climora App" className="app-logo" />
+          Climora App
+        </h1>
         <p>Descubra o clima de qualquer região do mundo</p>
       </header>
 
@@ -58,6 +74,7 @@ function App() {
         
         {weather && (
           <div className="weather-results">
+            {/* O NOME PASSADO AQUI AGORA É O NOME DO NOSSO ESTADO */}
             <WeatherDisplay current={weather.current} city={weather.name} />
             
             <div className="info-cards-grid">

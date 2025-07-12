@@ -21,7 +21,7 @@ const HourlyForecast = ({ hourly }) => {
           return (
             <div key={index} className="forecast-item">
               <p className="forecast-time">{formattedHour}:00</p>
-              <WeatherIcon code={hour.weather.code} />
+              <WeatherIcon iconCode={hour.weather.icon} isDay={hour.isDay} />
               <p className="forecast-temp">{Math.round(hour.temp)}°C</p>
             </div>
           );

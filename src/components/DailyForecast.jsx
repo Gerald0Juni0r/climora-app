@@ -24,7 +24,7 @@ const DailyForecast = ({ daily }) => {
           <div key={index} className="daily-item">
             <p className="day-name">{getDayName(day.dt)}</p>
             <div className="daily-icon-group">
-              <WeatherIcon code={day.weather.code} />
+              <WeatherIcon iconCode={day.weather.icon} isDay={true} />
               <p className="day-desc">{day.weather.description}</p>
             </div>
             <p className="day-temp">

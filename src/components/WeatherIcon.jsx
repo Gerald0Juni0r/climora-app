@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherIcon.css';
 
-const WeatherIcon = ({ code, className, isNight }) => {
+const WeatherIcon = ({ iconCode, isDay, className }) => {
   const renderRain = () => (
     <div className="rain">
       <div className="drop"></div>
@@ -12,40 +12,32 @@ const WeatherIcon = ({ code, className, isNight }) => {
 
   let iconJsx;
 
-  switch (code) {
-    case 0: // Céu Limpo
-      iconJsx = isNight ? <div className="moon"></div> : <div className="sun"></div>;
+  switch (iconCode) {
+    case '01': // Céu Limpo
+      iconJsx = isDay ? <div className="sun"></div> : <div className="moon"></div>;
       break;
 
-    case 1: // Quase Limpo
-    case 2: // Parcialmente Nublado
+    case '02': // Quase Limpo
+    case '03': // Parcialmente Nublado
       iconJsx = (
         <>
           <div className="cloud"></div>
           <div className="cloud-dark"></div>
-          {isNight ? <div className="moon moon-behind"></div> : <div className="sun sun-behind"></div>}
+          {isDay ? <div className="sun sun-behind"></div> : <div className="moon moon-behind"></div>}
         </>
       );
       break;
 
-    case 3: // Nublado
+    case '04': // Nublado
       iconJsx = <div className="cloud"></div>;
       break;
 
-    case 45: // Nevoeiro
-    case 48:
+    case '50': // Nevoeiro
       iconJsx = <div className="mist"></div>;
       break;
     
-    case 51: // Garoa
-    case 53:
-    case 55:
-    case 61: // Chuva
-    case 63:
-    case 65:
-    case 80: // Pancadas de Chuva
-    case 81:
-    case 82:
+    case '09': // Chuva/Garoa
+    case '10':
       iconJsx = (
         <>
           <div className="cloud"></div>
@@ -55,9 +47,7 @@ const WeatherIcon = ({ code, className, isNight }) => {
       );
       break;
 
-    case 95: // Trovoada
-    case 96:
-    case 99:
+    case '11': // Trovoada
       iconJsx = (
         <>
           <div className="cloud"></div>
