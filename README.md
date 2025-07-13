@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# ☁️ Climora App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Climora App é uma aplicação web para consulta de clima, projetada para fornecer informações meteorológicas detalhadas de qualquer lugar do mundo. O projeto foi criado para qualquer pessoa que deseje uma forma rápida, bonita e funcional de verificar o tempo, seja no celular, tablet ou computador.
 
-## Available Scripts
+## 🚀 Acesso ao Vivo
 
-In the project directory, you can run:
+Esse projeto pode ser acessado e utilizado por qualquer pessoa através do link abaixo. Não é necessário instalar nada!
 
-### `npm start`
+- **[Clique aqui para acessar o Climora App]([https://seu-usuario.github.io/climora-app/](https://gerald0juni0r.github.io/climora-app/))**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*(**Importante:** Substitua `seu-usuario.github.io/climora-app` pelo link real da sua hospedagem no GitHub Pages)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## DESKTOP 💻
+<img width="1900" height="940" alt="image" src="https://github.com/user-attachments/assets/c5c0b615-1d5c-4308-8e42-23e1bc789864" />
+<img width="1899" height="937" alt="image" src="https://github.com/user-attachments/assets/9e576066-1a67-4a71-89a7-ac04c7e589a2" />
 
-### `npm test`
+---
+## MOBILE 📱
+<img width="405" height="819" alt="image" src="https://github.com/user-attachments/assets/652a6173-6b36-49f3-8bd5-419d1efe6cfe" />
+<img width="407" height="820" alt="image" src="https://github.com/user-attachments/assets/aa5a6691-073b-4591-8e7b-5c390d85e45a" />
+<img width="404" height="817" alt="image" src="https://github.com/user-attachments/assets/9d0efdfa-df1e-47e7-8d96-2e7afcbfb603" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Busca Global:** Encontre o clima de qualquer cidade do mundo.
+- **Dados em Tempo Real:** Temperatura, sensação térmica, umidade, vento, pressão e visibilidade.
+- **Ícones Personalizados:** Ícones únicos feitos em CSS que distinguem claramente entre dia, noite, sol, nuvens e chuva.
+- **Previsão Detalhada:** Informações sobre as próximas 8 horas e os próximos 5 dias.
+- **Design Responsivo:** Funciona perfeitamente em qualquer tamanho de tela.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para a construção do projeto, foram utilizadas as seguintes tecnologias:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**
+- **CSS3 (Flexbox & Grid)**
+- **Axios**
+- **Open-Meteo API** (Fonte de dados gratuita e de código aberto)
