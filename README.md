@@ -6,9 +6,7 @@ O Climora App é uma aplicação web para consulta de clima, projetada para forn
 
 Esse projeto pode ser acessado e utilizado por qualquer pessoa através do link abaixo. Não é necessário instalar nada!
 
-- **[Clique aqui para acessar o Climora App]([https://seu-usuario.github.io/climora-app/](https://gerald0juni0r.github.io/climora-app/))**
-
-*(**Importante:** Substitua `seu-usuario.github.io/climora-app` pelo link real da sua hospedagem no GitHub Pages)*
+- **[Clique aqui para acessar o Climora App](https://gerald0juni0r.github.io/climora-app/)**
 
 ---
 ## DESKTOP 💻
